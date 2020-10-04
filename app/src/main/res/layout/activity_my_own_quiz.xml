@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/quiz_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bangers"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Guess what!"
+        android:textColor="#3F51B5"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/quiz_words"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bangers"
+        android:gravity="center_horizontal"
+        android:text="words"
+        android:textSize="50dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="true"
+        android:clipChildren="true"
+        android:clipToPadding="false"
+        android:scrollbars="none" />
+
+    <Button
+        android:id="@+id/prev_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DAD6D6"
+        android:fontFamily="@font/bangers"
+        android:text="back to previous word!"
+        android:textColor="#3F51B5"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DAD6D6"
+        android:fontFamily="@font/bangers"
+        android:text="move on to next word!"
+        android:textColor="#3F51B5"
+        android:textSize="20sp" />
+
+</LinearLayout>
